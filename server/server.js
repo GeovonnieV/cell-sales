@@ -8,9 +8,9 @@ app.use(express.urlencoded({extended: true}));
 app.use(cors());
 
 // connect DB
-
+require("./config/cellPhone.config");
 // import routes
-
+require("./routes/phone.route")(app);
 
 app.listen(port, () => {
     console.log(`Cell Sells is running on port ${port}`)
