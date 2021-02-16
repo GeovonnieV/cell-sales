@@ -53,20 +53,44 @@
       min-height: 60vh;
       border-radius: 18px;
       font-size: 1.5rem;
+      background-position: center;
   }
   
-  .card-text{
-
+  .card-apple{
+    background-image: url("../imgs/man-holding-iphone.jpg");
+    background-size: cover;
+      width: 25%;
+      text-align: center;
+      min-height: 60vh;
+      border-radius: 18px;
+      font-size: 1.5rem;
+      background-position: center;
   }
 
-  button{
-      margin-top: 80%;
+  .card-other{
+    background-image: url("../imgs/person-playing-oculus.jpg");
+    background-size: cover;
+      width: 25%;
+      text-align: center;
+      min-height: 60vh;
+      border-radius: 18px;
+      font-size: 1.5rem;
+      background-position: center;
   }
 
-  .card-title{
-    
+  .bottom-button{
+      margin-top: 85%;
+      padding:0.35em 1.2em;
+      border:0.1em solid #FFFFFF;
+      border-radius: .7em;
+      text-decoration:none;
+      color:#000000;
+      text-align:center;
+      transition: all 0.2s;
+      background: #FFFFFF;
   }
 
-  .card-stats{
- 
-  }
+  .bottom-button:hover{
+    color:#000000;
+    background-color:#dddddd;
+    }
