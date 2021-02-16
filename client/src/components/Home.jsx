@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {navigate, Link} from "@reach/router";
 
 const Home = () => {
   return (
@@ -16,7 +17,9 @@ const Home = () => {
         <div className="card-apple">
           <div className="card-text">
             <h2>Apple</h2>
-            <button className="bottom-button">Shop Apple</button>
+            <Link to="/apple">
+              <button className="bottom-button">Shop Apple</button>
+            </Link>
           </div>
         </div>
         {/* card 2 samsung */}
