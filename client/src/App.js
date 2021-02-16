@@ -23,12 +23,10 @@ function App() {
           {/* end card */}
         </div>
         {/* card 2 */}
-        <div className="card">
-          <div className="card-img"> </div>
+        <div className="card-samsung">
           <div className="card-text">
-            <span className="date">4 days ago</span>
-            <h2>Post One</h2>
-            <p>lsdjfkls sdjfklj asjkfljkl jkasl fksldjfk  kljskd fj lkjsafl  jklsadfk lkjsadklfjkl klajs f kjlasdfjlk jsdfjoij asdfjkl</p>  
+            <h2>Samsung</h2>
+            <button>click</button>  
           </div>
           <div className="card-stats"> </div>
           {/* end card */}
