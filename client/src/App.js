@@ -1,3 +1,4 @@
+import { spawn } from 'child_process';
 import './App.css';
 import "./styles/app.scss"
 
@@ -10,17 +11,39 @@ function App() {
           <h3>Happy to see you</h3>
         </div>
       </div>
-      <div className="homepage-bottom">
-        <div className="cards-container">
-            <div className="card">
-                <figure className="front">
-                  <h1>pro tier</h1>
-                </figure>
-                <figure className="back">
-                  <h1>price</h1>
-                  <button>click me</button>
-                </figure>
-            </div>
+      {/* bottom */}
+      <div className="card-container">
+        <div className="card">
+          <div className="card-img"> </div>
+          <div className="card-text">
+            <span className="date">4 days ago</span>
+            <h2>Post One</h2>
+            <p>lsdjfkls sdjfklj asjkfljkl jkasl fksldjfk  kljskd fj lkjsafl  jklsadfk lkjsadklfjkl klajs f kjlasdfjlk jsdfjoij asdfjkl</p>  
+          </div>
+          <div className="card-stats"> </div>
+          {/* end card */}
+        </div>
+        {/* card 2 */}
+        <div className="card">
+          <div className="card-img"> </div>
+          <div className="card-text">
+            <span className="date">4 days ago</span>
+            <h2>Post One</h2>
+            <p>lsdjfkls sdjfklj asjkfljkl jkasl fksldjfk  kljskd fj lkjsafl  jklsadfk lkjsadklfjkl klajs f kjlasdfjlk jsdfjoij asdfjkl</p>  
+          </div>
+          <div className="card-stats"> </div>
+          {/* end card */}
+        </div>
+        {/* card 3 */}
+        <div className="card">
+          <div className="card-img"> </div>
+          <div className="card-text">
+            <span className="date">4 days ago</span>
+            <h2>Post One</h2>
+            <p>lsdjfkls sdjfklj asjkfljkl jkasl fksldjfk  kljskd fj lkjsafl  jklsadfk lkjsadklfjkl klajs f kjlasdfjlk jsdfjoij asdfjkl</p>  
+          </div>
+          <div className="card-stats"> </div>
+          {/* end card */}
         </div>
       </div>
     </div>
