@@ -1,19 +1,15 @@
-.apple-top{
-    // margin-top: 2%;
-    height: 65vh;
-    background-image: url("../imgs/apple-logo.png");
-    background-size: cover;
-    background-position: center;
-}
-
 .apple-heading{
-    padding-top: 12%;
+    margin-top: 3%;
     text-align: center;
-    color: #fff;
-    font-size: 6rem;
+    // color: #fff;
+    font-size: 5rem;
 }
 
 .apple-row{
-    // background: blue;
     margin-top: 1%;
+}
+
+.apple-row-name{
+    margin-top: 1%;
+    font-weight: 400;
 }

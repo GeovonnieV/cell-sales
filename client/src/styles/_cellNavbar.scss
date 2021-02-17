@@ -1,0 +1,19 @@
+.navbarItems{
+    display: flex;
+    background-color: red;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-list{
+    // display: flex;
+    list-style: none;
+    display: flex;
+    padding-right: 5%;
+
+    li{
+        text-decoration: none;
+        // margin-right: 9%;
+        margin-right: 20%;
+    }
+}
