@@ -1,17 +1,21 @@
 import React, {useState} from "react";
+import 'materialize-css/dist/css/materialize.min.css';
+import {add_location} from "materialize-css"
 
 const CellNavbar = () => {
     return(
             <nav className="navbarItems">
-                <h1 className="navbar-logo">Cellular Sells</h1>
-                <div className="menu-icon">
-                    <i></i>
+                <div className="left-nav">
+                    <h1 className="navbar-logo">Cellular Sells</h1>
+                    <div className="menu-icon">
+                        <i className="add_location">add_location</i>
+                    </div>
                 </div>
                 <ul className="navbar-list">
                     <li>home</li>
                     <li>home</li>
                     <li>home</li>
-                    <i></i>
+                    <i>adfafdas</i>
                 </ul>
             </nav>
     )
