@@ -4,7 +4,7 @@ import { Button, Badges, Icons, Dropdown } from "materialize-css";
 
 const Apple = (props) => {
 
-    const { iphones, ipads } = props;
+    const { iphones, ipads, appleWatches } = props;
 
     return (
         <div>
@@ -40,6 +40,19 @@ const Apple = (props) => {
                     }
                 </div>
                 {/* begin watches row */}
+                <h2 className="apple-row-name">Watches</h2>
+                <div className="apple-row">
+                    {
+                        appleWatches.map((watch) => (
+                            <div className="apple-card">
+                                <img className="card-images" src={watch.image} alt="" />
+                                <p className="card-item-name">{watch.name}</p>
+                                <p>${watch.price.toFixed(2)}</p>
+                                <button className="waves-effect btn-small">Add</button>
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
         </div>
     )

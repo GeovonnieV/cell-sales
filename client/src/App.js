@@ -9,17 +9,19 @@ import CellNavbar from "./components/CellNavbar";
 // import store data
 import iphoneData from "./storeData/apple/iphones-data";
 import ipadData from "./storeData/apple/ipad-data";
+import appleWatchData from "./storeData/apple/apple-watches-data";
 
 function App() {
-
-  const {iphones} = iphoneData 
-  const {ipads} = ipadData 
+  // import store inventory
+  const {iphones} = iphoneData; 
+  const {ipads} = ipadData;
+  const {appleWatches} = appleWatchData;
 
   return (
     <div>
       <Router>
         <Home path="/" />
-        <Apple path="/apple" iphones={iphones} ipads={ipads} />
+        <Apple path="/apple" iphones={iphones} ipads={ipads} appleWatches={appleWatches} />
       </Router>
     </div>
   );
