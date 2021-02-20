@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import CellNavbar from "./CellNavbar";
-import { Button, Badges, Icons } from "materialize-css";
+import { Button, Badges, Icons, Dropdown } from "materialize-css";
 
 const Apple = (props) => {
 
-    const { iphones } = props;
+    const { iphones, ipads } = props;
 
     return (
         <div>
@@ -21,12 +21,6 @@ const Apple = (props) => {
                                 <p>${iphone.price.toFixed(2)}</p>
                                 <button className="waves-effect btn-small">Add</button>
                                 {/*  */}
-                                <ul id="dropdown2" className="dropdown-content">
-                                    <li><a href="#!">one<span className="badge">1</span></a></li>
-                                    <li><a href="#!">two<span className="new badge">1</span></a></li>
-                                    <li><a href="#!">three</a></li>
-                                </ul>
-                                <a className="btn dropdown-trigger" href="#!" data-target="dropdown2">Dropdown<i className="material-icons right">arrow_drop_down</i></a>
                             </div>
                         ))
                     }
@@ -35,15 +29,17 @@ const Apple = (props) => {
                 <h2 className="apple-row-name">Tablets</h2>
                 <div className="apple-row">
                     {
-                        iphones.map((iphone) => (
+                        ipads.map((ipad) => (
                             <div className="apple-card">
-                                <img className="card-images" src={iphone.image} alt="" />
-                                <p className="card-item-name">{iphone.name}</p>
-                                <p>${iphone.price.toFixed(2)}</p>
+                                <img className="card-images" src={ipad.image} alt="" />
+                                <p className="card-item-name">{ipad.name}</p>
+                                <p>${ipad.price.toFixed(2)}</p>
+                                <button className="waves-effect btn-small">Add</button>
                             </div>
                         ))
                     }
                 </div>
+                {/* begin watches row */}
             </div>
         </div>
     )

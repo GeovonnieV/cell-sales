@@ -16,7 +16,7 @@
     // display: flex;
     list-style: none;
     display: flex;
-    padding-right: 5%;
+    padding-right: 10%;
 
     li{
         text-decoration: none;
@@ -27,4 +27,10 @@
 
 .navbar-logo{
     font-size: 2rem;
+}
+
+.shopping-cart-btn{
+    height: fit-content;
+    background: none;
+    border: none;
 }

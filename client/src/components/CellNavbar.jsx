@@ -1,6 +1,5 @@
 import React, {useState} from "react";
-import 'materialize-css/dist/css/materialize.min.css';
-import {add_location} from "materialize-css"
+import {Icons} from "materialize-css";
 
 const CellNavbar = () => {
     return(
@@ -16,7 +15,7 @@ const CellNavbar = () => {
                     <li>Apple</li>
                     <li>Samsung</li>
                     <li>Other</li>
-                    <i>Cart</i>
+                   <button className="shopping-cart-btn"> <i className="small material-icons">shopping_cart</i> </button>
                 </ul>
             </nav>
     )
