@@ -1,14 +1,15 @@
 .navbarItems{
     display: flex;
-    background-color: red;
+    background-color: #fff;
+    color: #000;
     align-items: center;
     justify-content: space-between;
+    height: 5vh;
 }
 
 .left-nav{
     display: flex;
     justify-content: center;
-    
 }
 
 .navbar-list{
@@ -22,4 +23,8 @@
         // margin-right: 9%;
         margin-right: 20%;
     }
+}
+
+.navbar-logo{
+    font-size: 2rem;
 }

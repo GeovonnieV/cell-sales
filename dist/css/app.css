@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.home {
+  background-attachment: fixed;
+  height: 70vh;
+  background: url("../imgs/iphone-wheel.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.home-top-text {
+  margin: 0 auto;
+  padding-top: 25vh;
+  width: 20%;
+  text-align: center;
+}
+
+.home-top-text h1 {
+  font-size: 3rem;
+}
+
+.bottom-head {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 1%;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("../imgs/man-holding-iphone.jpg");
+  background-size: cover;
+  width: 25%;
+  text-align: center;
+  min-height: 60vh;
+  border-radius: 18px;
+}
+
+.card-samsung {
+  background-image: url("../imgs/man-holding-samsung.jpg");
+  background-size: cover;
+  width: 25%;
+  text-align: center;
+  min-height: 60vh;
+  border-radius: 18px;
+  font-size: 1.5rem;
+  background-position: center;
+}
+
+.card-apple {
+  background-image: url("../imgs/man-holding-iphone.jpg");
+  background-size: cover;
+  width: 25%;
+  text-align: center;
+  min-height: 60vh;
+  border-radius: 18px;
+  font-size: 1.5rem;
+  background-position: center;
+}
+
+.card-other {
+  background-image: url("../imgs/person-playing-oculus.jpg");
+  background-size: cover;
+  width: 25%;
+  text-align: center;
+  min-height: 60vh;
+  border-radius: 18px;
+  font-size: 1.5rem;
+  background-position: center;
+}
+
+.bottom-button {
+  margin-top: 85%;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #FFFFFF;
+  border-radius: .7em;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background: #FFFFFF;
+}
+
+.bottom-button:hover {
+  color: #000000;
+  background-color: #dddddd;
+}
+
+.apple-heading {
+  text-align: center;
+}
+
+.apple-row {
+  margin-top: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 40vh;
+}
+
+.apple-row-name {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.card-images {
+  height: 60%;
+}
+
+.card-item-name {
+  font-size: 1.5rem;
+}
+
+.navbarItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  color: #000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 5vh;
+}
+
+.left-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 5%;
+}
+
+.navbar-list li {
+  text-decoration: none;
+  margin-right: 20%;
+}
+
+.navbar-logo {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=app.css.map */

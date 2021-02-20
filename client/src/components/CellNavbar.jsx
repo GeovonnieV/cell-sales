@@ -8,7 +8,7 @@ const CellNavbar = () => {
                 <div className="left-nav">
                     <h1 className="navbar-logo">Cellular Sells</h1>
                     <div className="menu-icon">
-                        <i className="add_location">add_location</i>
+                        <i className="add_location"></i>
                     </div>
                 </div>
                 <ul className="navbar-list">

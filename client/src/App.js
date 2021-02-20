@@ -18,7 +18,6 @@ function App() {
       <Router>
         <Home path="/" />
         <Apple path="/apple" iphones={iphones} />
-        <CellNavbar path="/navbar" />
       </Router>
     </div>
   );

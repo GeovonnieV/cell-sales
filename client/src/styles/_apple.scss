@@ -1,24 +1,31 @@
 .apple-heading{
-    margin-top: 3%;
     text-align: center;
     // color: #fff;
-    font-size: 5rem;
+    // font-size: 5rem;
 }
 
 .apple-row{
-    margin-top: 1%;
+    margin-top: 0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
+    // background-color: red;
+    height: 40vh;
+}
+
+.apple-card{
+    // background-color: blue;
+    
 }
 
 .apple-row-name{
-    margin-top: 1%;
+    // margin-top: 1%;
     font-weight: 400;
     font-size: 2.5rem;
 }
 
 .card-images{
-    height: 40%;
+    height: 60%;
 }
 
 .card-item-name{
