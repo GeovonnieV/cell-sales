@@ -5,6 +5,7 @@ import {Router} from "@reach/router";
 // import component files
 import Home from "./components/Home";
 import Apple from "./components/Apple";
+import Samsung from "./components/Samsung";
 import CellNavbar from "./components/CellNavbar";
 // import store data
 import iphoneData from "./storeData/apple/iphones-data";
@@ -22,6 +23,7 @@ function App() {
       <Router>
         <Home path="/" />
         <Apple path="/apple" iphones={iphones} ipads={ipads} appleWatches={appleWatches} />
+        <Samsung path="/samsung" />
       </Router>
     </div>
   );

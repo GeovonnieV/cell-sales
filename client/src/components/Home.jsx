@@ -26,7 +26,9 @@ const Home = () => {
         <div className="card-samsung">
           <div className="card-text">
             <h2>Samsung</h2>
-            <button className="bottom-button">Shop Samsung</button>
+            <Link to="samsung">
+              <button className="bottom-button">Shop Samsung</button>
+            </Link> 
           </div>
         </div>
         {/* card 3 other*/}

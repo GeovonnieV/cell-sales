@@ -45,7 +45,7 @@ const Apple = (props) => {
                     {
                         appleWatches.map((watch) => (
                             <div className="apple-card">
-                                <img className="card-images" src={watch.image} alt="" />
+                                <img className="watch-images" src={watch.image} alt="" />
                                 <p className="card-item-name">{watch.name}</p>
                                 <p>${watch.price.toFixed(2)}</p>
                                 <button className="waves-effect btn-small">Add</button>

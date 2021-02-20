@@ -7,7 +7,7 @@ const appleWatchData = {
         image: "https://www.att.com/idpassets/global/devices/other/apple/apple-watch-series-6-40mm/defaultimage/Blue%20Aluminum%20-%20Deep%20Navy%20Sport-hero-zoom.png"
     },
     {
-        name: "Apple Nike Watch Series 6",
+        name: "Apple Nike Watch",
         price: 550,
         image: "https://www.att.com/idpassets/global/devices/wearables/apple/apple-watch-nike-series-6-44mm/defaultimage/space-gray-aluminum-anthracite-black-hero-zoom.png"
     },
