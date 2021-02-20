@@ -7,9 +7,20 @@
 
 .apple-row{
     margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .apple-row-name{
     margin-top: 1%;
     font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.card-images{
+    height: 40%;
+}
+
+.card-item-name{
+    font-size: 1.5rem;
 }

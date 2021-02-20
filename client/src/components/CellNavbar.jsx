@@ -12,10 +12,11 @@ const CellNavbar = () => {
                     </div>
                 </div>
                 <ul className="navbar-list">
-                    <li>home</li>
-                    <li>home</li>
-                    <li>home</li>
-                    <i>adfafdas</i>
+                    <li>Home</li>
+                    <li>Apple</li>
+                    <li>Samsung</li>
+                    <li>Other</li>
+                    <i>Cart</i>
                 </ul>
             </nav>
     )
