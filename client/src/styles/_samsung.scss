@@ -1,0 +1,32 @@
+.samsung-heading{
+    text-align: center;
+}
+
+.samsung-row-name{
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.samsung-row{
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    // background-color: red;
+    height: 40vh;
+    width: 100%;
+}
+
+.samsung-card{
+    // background-color: blue;
+    width: 100%;
+}
+
+.card-images{
+    height: 70%;
+    width: 55%;
+}
+
+.card-item-name{
+    font-size: 1.5rem;
+}
