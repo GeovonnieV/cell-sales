@@ -12,6 +12,8 @@ import iphoneData from "./storeData/apple/iphones-data";
 import ipadData from "./storeData/apple/ipad-data";
 import appleWatchData from "./storeData/apple/apple-watches-data";
 import samsungPhoneData from "./storeData/samsung/samsung-phones";
+import samsungTabletData from "./storeData/samsung/samsung-tablets";
+import samsungWatchData from "./storeData/samsung/samsung-watch-data";
 
 function App() {
   // import store inventory
@@ -19,13 +21,15 @@ function App() {
   const {ipads} = ipadData;
   const {appleWatches} = appleWatchData;
   const {samsungPhones} = samsungPhoneData;
+  const {samsungTablets} = samsungTabletData;
+  const {samsungWatches} = samsungWatchData;
 
   return (
     <div>
       <Router>
         <Home path="/" />
         <Apple path="/apple" iphones={iphones} ipads={ipads} appleWatches={appleWatches} />
-        <Samsung path="/samsung" samsungPhones={samsungPhones} />
+        <Samsung path="/samsung" samsungPhones={samsungPhones} samsungTablets={samsungTablets} samsungWatches={samsungWatches} />
       </Router>
     </div>
   );
