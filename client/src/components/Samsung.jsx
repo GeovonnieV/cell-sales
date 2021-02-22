@@ -8,6 +8,8 @@ const Samsung = (props) => {
   const { samsungPhones, samsungTablets, samsungWatches } = props;
 
     // funtcions that add items to cart
+
+    // phones
     const addSamsungPhoneToCart = (galaxy) => {
 
         axios.post("http://localhost:3000/api/phones", {
@@ -15,8 +17,29 @@ const Samsung = (props) => {
             price: galaxy.price
         })
 
-    }
-    
+    };
+
+    // watches
+    const addSamsungWatchToCart = (watch) => {
+
+        axios.post("http://localhost:3000/api/phones", {
+            title: watch.name,
+            price: watch.price
+        })
+
+    };
+
+    // tablets
+    const addSamsungTabletToCart = (tablet) => {
+
+        axios.post("http://localhost:3000/api/phones", {
+            title: tablet.name,
+            price: tablet.price
+        })
+
+    };
+
+
   return (
     <div>
       <CellNavbar />
@@ -42,7 +65,7 @@ const Samsung = (props) => {
               <img className="card-images" src={watch.image} alt="" />
               <p className="card-item-name">{watch.name}</p>
               <p>${watch.price.toFixed(2)}</p>
-              <button className="waves-effect btn-small">Add</button>
+              <button className="waves-effect btn-small" onClick={() => addSamsungWatchToCart(watch)}>Add</button>
               {/* end galaxy row */}
             </div>
           ))}
@@ -59,7 +82,7 @@ const Samsung = (props) => {
               />
               <p className="card-item-name">{tablet.name}</p>
               <p>${tablet.price.toFixed(2)}</p>
-              <button className="waves-effect btn-small">Add</button>
+              <button className="waves-effect btn-small" onClick={() => addSamsungTabletToCart(tablet)}>Add</button>
               {/* end tablelt row */}
             </div>
           ))}

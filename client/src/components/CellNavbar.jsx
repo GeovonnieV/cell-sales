@@ -22,7 +22,9 @@ const CellNavbar = () => {
                         <li>Samsung</li>
                     </Link>
                     <li>Other</li>
-                   <button className="shopping-cart-btn"> <i className="small material-icons">shopping_cart</i> </button>
+                    <Link to="/cart">
+                      <button className="shopping-cart-btn"> <i className="small material-icons">shopping_cart</i> </button> 
+                    </Link>
                 </ul>
             </nav>
     )
