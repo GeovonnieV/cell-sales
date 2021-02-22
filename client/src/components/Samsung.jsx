@@ -1,10 +1,22 @@
 import React, { useState } from "react";
 import CellNavbar from "./CellNavbar";
 import { Button, Badges, Icons, Dropdown } from "materialize-css";
+// const [errs, setErrs] = useState({});
+import axios from "axios";
 
 const Samsung = (props) => {
   const { samsungPhones, samsungTablets, samsungWatches } = props;
 
+    // funtcions that add items to cart
+    const addSamsungPhoneToCart = (galaxy) => {
+
+        axios.post("http://localhost:3000/api/phones", {
+            title: galaxy.name,
+            price: galaxy.price
+        })
+
+    }
+    
   return (
     <div>
       <CellNavbar />
@@ -17,7 +29,7 @@ const Samsung = (props) => {
               <img className="card-images" src={galaxy.image} alt="" />
               <p className="card-item-name">{galaxy.name}</p>
               <p>${galaxy.price.toFixed(2)}</p>
-              <button className="waves-effect btn-small">Add</button>
+              <button className="waves-effect btn-small" onClick={() => addSamsungPhoneToCart(galaxy)} >Add</button>
               {/* end galaxy row */}
             </div>
           ))}

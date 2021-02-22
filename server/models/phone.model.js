@@ -13,3 +13,7 @@ const PhonesSchema = new mongoose.Schema({
 }, {
     timestamps: true
 });
+
+const Phone = mongoose.model("Phone", PhonesSchema);
+
+module.exports = Phone;
