@@ -12,6 +12,8 @@ const Samsung = (props) => {
     // phones
     const addSamsungPhoneToCart = (galaxy) => {
 
+        alert(`${galaxy.name} added to cart`)
+
         axios.post("http://localhost:3000/api/phones", {
             title: galaxy.name,
             price: galaxy.price
