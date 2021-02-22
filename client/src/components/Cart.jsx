@@ -29,6 +29,14 @@ const Cart = () => {
          alert("Must have items in cart to check out")
          
      }
+
+     let sum = 0;
+
+     allCartItems.map((item) => {
+       const itemPrice = item.price;
+       sum += itemPrice;
+     })
+     alert("total is " + sum);
   }
 
   return (
