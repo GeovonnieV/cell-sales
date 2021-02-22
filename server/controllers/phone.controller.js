@@ -15,6 +15,11 @@ module.exports = {
                   console.log("Error creating a phone document: " + err);
                   res.json(err);
               })
+    },
+    delete: (req,res) => {
+        Phone.findByIdAndDelete(req.params.id)
+            .then((deleted) => res.json(deleted))
+            .catch((err) => res.json(err))
     }
 
 }

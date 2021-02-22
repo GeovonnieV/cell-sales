@@ -1,16 +1,32 @@
 import React, { useState, useEffect } from "react";
 import CellNavbar from "./CellNavbar";
+import { Button, Badges, Icons, Dropdown } from "materialize-css";
 import axios from "axios";
 
 const Cart = () => {
   const [allCartItems, setAllCartItems] = useState([]);
-
+  // grabs all the data in the DB
   useEffect(() => {
     axios
       .get("http://localhost:3000/api/phones")
       .then((res) => setAllCartItems(res.data))
       .catch((err) => console.log(err));
   }, []);
+
+  const deleteItem = (e, itemId) => {
+    e.preventDefault()
+    
+    axios.delete("http://localhost:3000/api/phones/" + itemId)
+    .then((res) => {
+        console.log(res.data)
+        setAllCartItems(allCartItems.filter((item) => item._id !== itemId));
+    })
+    .catch((err) => console.log(err));
+}
+
+  const calculateTotal = () => {
+     
+  }
 
   return (
     <div>
@@ -24,11 +40,11 @@ const Cart = () => {
             </div>
             <div className="cart-right">
                  <h4>${item.price}</h4>
-                 <button>delete</button>
+                 <button className="waves-effect btn-large" onClick={ (e) => deleteItem(e,item._id)} >delete</button>
             </div>
         </div>
         ))}
-        <button>Check Out</button>
+        <button className="waves-effect btn-large" onClick={calculateTotal}>Check Out</button>
       </div>
     </div>
   );
