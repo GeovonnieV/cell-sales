@@ -15,7 +15,7 @@ const Cart = () => {
 
   const deleteItem = (e, itemId) => {
     e.preventDefault()
-    
+
     axios.delete("http://localhost:3000/api/phones/" + itemId)
     .then((res) => {
         console.log(res.data)
@@ -25,7 +25,10 @@ const Cart = () => {
 }
 
   const calculateTotal = () => {
-     
+     if(allCartItems == 0){
+         alert("Must have items in cart to check out")
+         
+     }
   }
 
   return (
@@ -40,11 +43,11 @@ const Cart = () => {
             </div>
             <div className="cart-right">
                  <h4>${item.price}</h4>
-                 <button className="waves-effect btn-large" onClick={ (e) => deleteItem(e,item._id)} >delete</button>
+                 <button className="waves-effect btn-small" onClick={ (e) => deleteItem(e,item._id)} >delete</button>
             </div>
         </div>
         ))}
-        <button className="waves-effect btn-large" onClick={calculateTotal}>Check Out</button>
+        <button className="waves-effect btn-large checkout-btn" onClick={calculateTotal}>Check Out</button>
       </div>
     </div>
   );

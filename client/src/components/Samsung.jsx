@@ -64,8 +64,8 @@ const Samsung = (props) => {
         <div className="samsung-row">
           {samsungWatches.map((watch) => (
             <div className="samsung-card">
-              <img className="card-images" src={watch.image} alt="" />
-              <p className="card-item-name">{watch.name}</p>
+              <img className="samsung-watch-card-images" src={watch.image} alt="" />
+              <p className="card-watch-name">{watch.name}</p>
               <p>${watch.price.toFixed(2)}</p>
               <button className="waves-effect btn-small" onClick={() => addSamsungWatchToCart(watch)}>Add</button>
               {/* end galaxy row */}

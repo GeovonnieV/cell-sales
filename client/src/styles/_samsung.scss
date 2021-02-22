@@ -22,6 +22,12 @@
     width: 100%;
 }
 
+.samsung-watch-card{
+     background-color: blue;
+    // width: 50%;
+    vertical-align: top;
+}
+
 .card-images{
     height: 70%;
     width: 55%;
@@ -32,6 +38,15 @@
     width: 40%;
 }
 
+.samsung-watch-card-images{
+    height: 50%;
+    width: 45%;
+}
+
 .card-item-name{
     font-size: 1.5rem;
+}
+
+.card-watch-name{
+    font-size: 1.2rem;
 }
