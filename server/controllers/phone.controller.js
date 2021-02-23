@@ -22,9 +22,16 @@ module.exports = {
             .catch((err) => res.json(err))
     },
     update: (req,res) => {
-        Phone.findByIdAndUpdate(req.params.id, {new: true})
+        Phone.findByIdAndUpdate(req.params.id)
             .then((updatedPhone) => res.json(updatedPhone))
             .catch((err) => res.json(err))
+    },
+    deleteAll: (req,res) => {
+        Phone.deleteMany()
+            .then((empty) => {
+                res.json(empty)
+            })
     }
+
 
 }
