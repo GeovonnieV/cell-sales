@@ -8,7 +8,11 @@ const PhonesSchema = new mongoose.Schema({
    price: {
        type: Number,
        required: true
-   } 
+   },
+   color: {
+       type: String,
+       required: [true, "select a phone color"]
+   }
 
 }, {
     timestamps: true

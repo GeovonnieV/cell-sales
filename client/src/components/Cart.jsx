@@ -48,6 +48,7 @@ const Cart = () => {
         <div className="cart-container">
             <div className="cart-left">
                  <h3>{item.title}....</h3>
+                 <h4>{item.color}</h4>
             </div>
             <div className="cart-right">
                  <h4>${item.price}</h4>

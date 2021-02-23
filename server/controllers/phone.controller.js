@@ -20,6 +20,11 @@ module.exports = {
         Phone.findByIdAndDelete(req.params.id)
             .then((deleted) => res.json(deleted))
             .catch((err) => res.json(err))
+    },
+    update: (req,res) => {
+        Phone.findByIdAndUpdate(req.params.id, {new: true})
+            .then((updatedPhone) => res.json(updatedPhone))
+            .catch((err) => res.json(err))
     }
 
 }
