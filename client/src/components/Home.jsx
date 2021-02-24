@@ -35,7 +35,9 @@ const Home = () => {
         <div className="card-other">
           <div className="card-text">
             <h2>Other</h2>
-            <button className="bottom-button">Shop Other</button>
+            <Link to="/other">
+              <button className="bottom-button">Shop Other</button>
+            </Link>
           </div>
         </div>
       </div>
