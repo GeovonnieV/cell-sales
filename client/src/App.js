@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Apple from "./components/Apple";
 import Samsung from "./components/Samsung";
 import Cart from "./components/Cart";
+import Other from "./components/Other";
 // import store data
 import iphoneData from "./storeData/apple/iphones-data";
 import ipadData from "./storeData/apple/ipad-data";
@@ -30,6 +31,7 @@ function App() {
         <Home path="/" />
         <Apple path="/apple" iphones={iphones} ipads={ipads} appleWatches={appleWatches} />
         <Samsung path="/samsung" samsungPhones={samsungPhones} samsungTablets={samsungTablets} samsungWatches={samsungWatches} />
+        <Other path="/other" />
         <Cart path="/cart" />
       </Router>
     </div>

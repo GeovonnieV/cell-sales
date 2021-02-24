@@ -21,7 +21,9 @@ const CellNavbar = () => {
                     <Link to="/samsung">
                         <li>Samsung</li>
                     </Link>
-                    <li>Other</li>
+                    <Link to="/other">
+                      <li>Other</li>
+                    </Link>
                     <Link to="/cart">
                       <button className="shopping-cart-btn"> <i className="small material-icons">shopping_cart</i> </button> 
                     </Link>
