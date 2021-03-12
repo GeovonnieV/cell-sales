@@ -1,99 +1,148 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
 
-.home{
-    
-    background-attachment: fixed;
-      height: 70vh;
-      background: url("../imgs/iphone-wheel.jpeg");
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
+.home {
+  background-attachment: fixed;
+  height: 70vh;
+  background: url("../imgs/iphone-wheel.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.home-top-text {
+  margin: 0 auto;
+  padding-top: 15vh;
+  font-weight: 800;
+  width: 30%;
+  text-align: center;
+  h1 {
+    font-size: 4rem;
+    font-weight: 400;
   }
-  
-  .home-top-text{
-      margin: 0 auto;
-      padding-top: 15vh;
-      font-weight: 800;
-      width: 30%;
-      text-align: center;  
-      h1{
-          font-size: 4rem;
-          font-weight: 400;
-      }
-      h3{
-        font-size: 2rem;
-      }
+  h3 {
+    font-size: 2rem;
   }
-    
-  .bottom-head{
-      text-align: center;
+}
+
+.bottom-head {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  //   background: black;
+  margin-top: 1%;
+}
+
+.card {
+  display: flex;
+  background: url("../imgs/man-holding-iphone.jpg");
+  background-size: cover;
+  width: 25%;
+  text-align: center;
+  min-height: 60vh;
+  border-radius: 18px;
+}
+
+.card-samsung {
+  background-image: url("../imgs/man-holding-samsung.jpg");
+  background-size: cover;
+  width: 25%;
+  text-align: center;
+  min-height: 60vh;
+  border-radius: 18px;
+  font-size: 1.5rem;
+  background-position: center;
+}
+
+.card-apple {
+  background-image: url("../imgs/man-holding-iphone.jpg");
+  background-size: cover;
+  width: 25%;
+  text-align: center;
+  min-height: 60vh;
+  border-radius: 18px;
+  font-size: 1.5rem;
+  background-position: center;
+}
+
+.card-other {
+  background-image: url("../imgs/person-playing-oculus.jpg");
+  background-size: cover;
+  width: 25%;
+  text-align: center;
+  min-height: 60vh;
+  border-radius: 18px;
+  font-size: 1.5rem;
+  background-position: center;
+}
+
+.bottom-button {
+  margin-top: 85%;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ffffff;
+  border-radius: 0.7em;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  transition: all 0.2s;
+  background: #ffffff;
+}
+
+.bottom-button:hover {
+  color: #000000;
+  background-color: #dddddd;
+}
+
+// Media querys
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .home-top-text {
+    margin: 0 auto;
+    padding-top: 30vh;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+    h1 {
       font-size: 2.5rem;
-      font-weight: 500;
-  }
-
-  .card-container{
-      display: flex;
-      justify-content: space-around;
-    //   background: black;
-      margin-top: 1%;
-  }
-
-  .card{
-      display: flex;
-      background: url("../imgs/man-holding-iphone.jpg");
-      background-size: cover;
-      width: 25%;
-      text-align: center;
-      min-height: 60vh;
-      border-radius: 18px;
-  }
-
-  .card-samsung{
-    background-image: url("../imgs/man-holding-samsung.jpg");
-    background-size: cover;
-      width: 25%;
-      text-align: center;
-      min-height: 60vh;
-      border-radius: 18px;
-      font-size: 1.5rem;
-      background-position: center;
-  }
-  
-  .card-apple{
-    background-image: url("../imgs/man-holding-iphone.jpg");
-    background-size: cover;
-      width: 25%;
-      text-align: center;
-      min-height: 60vh;
-      border-radius: 18px;
-      font-size: 1.5rem;
-      background-position: center;
-  }
-
-  .card-other{
-    background-image: url("../imgs/person-playing-oculus.jpg");
-    background-size: cover;
-      width: 25%;
-      text-align: center;
-      min-height: 60vh;
-      border-radius: 18px;
-      font-size: 1.5rem;
-      background-position: center;
-  }
-
-  .bottom-button{
-      margin-top: 85%;
-      padding:0.35em 1.2em;
-      border:0.1em solid #FFFFFF;
-      border-radius: .7em;
-      text-decoration:none;
-      color:#000000;
-      text-align:center;
-      transition: all 0.2s;
-      background: #FFFFFF;
-  }
-
-  .bottom-button:hover{
-    color:#000000;
-    background-color:#dddddd;
+      font-weight: 400;
     }
+    h3 {
+      font-size: 1rem;
+    }
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+  }
+
+  .card-apple {
+    width: 65%;
+    font-size: 1rem;
+  }
+
+  .card-samsung {
+    width: 65%;
+    font-size: 1rem;
+    margin-top: 2%;
+  }
+
+  .card-other {
+    width: 65%;
+    font-size: 1rem;
+    margin-top: 2%;
+  }
+
+
+}

@@ -1,10 +1,25 @@
 import React from "react";
 import CellNavbar from "./CellNavbar";
 import { Button, Badges, Icons, Dropdown } from "materialize-css";
+import axios from "axios";
 
 const Other = (props) => {
   // props
   const { games } = props;
+
+//   add to cart functions
+
+    // games add to cart
+    const gamesAddToCart = (game) => {
+        
+            axios.post("http://localhost:3000/api/phones", {
+              title: game.name,
+              price: game.price,
+            });
+      
+            alert(`${game.name} added to cart`);
+          
+    };
 
   return (
     <div>
@@ -20,7 +35,7 @@ const Other = (props) => {
               <p>${game.price.toFixed(2)}</p>
               {/* card btns */}
               <div className="btns-container">
-                <button className="waves-effect btn-small">Add</button>
+                <button className="waves-effect btn-small" onClick={() => gamesAddToCart(game)}>Add</button>
                 {/* dropdown */}
               </div>
               {/* end card */}
