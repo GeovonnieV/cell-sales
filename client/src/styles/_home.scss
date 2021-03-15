@@ -145,4 +145,145 @@
   }
 
 
+};
+
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+ 
+  .home-top-text {
+    margin: 0 auto;
+    padding-top: 30vh;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 400;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .bottom-button {
+    margin-top: 100%;
+  }
+
+};
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .home-top-text {
+      margin: 0 auto;
+      padding-top: 30vh;
+      font-weight: 800;
+      width: 100%;
+      text-align: center;
+      h1 {
+        font-size: 4rem;
+        font-weight: 400;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+
+    .bottom-button {
+      margin-top: 105%;
+    }
+
+
+};
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .home-top-text {
+      margin: 0 auto;
+      padding-top: 30vh;
+      font-weight: 800;
+      width: 100%;
+      text-align: center;
+      h1 {
+        font-size: 5rem;
+        font-weight: 400;
+      }
+      h3 {
+        font-size: 3rem;
+      }
+    }
+
+    .bottom-head {
+      text-align: center;
+      font-size: 4rem;
+      font-weight: 500;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 1%;
+      max-height: 45vh;
+    }
+    
+.card-apple {
+  background-image: url("../imgs/man-holding-iphone.jpg");
+  background-size: cover;
+  width: 25%;
+  text-align: center;
+  // fixes height
+  min-height: 10vh;
+  border-radius: 18px;
+  background-position: center;
 }
+  
+    .card-samsung {
+      background-size: cover;
+      width: 25%;
+      text-align: center;
+      // fixes height
+      min-height: 10vh;
+      border-radius: 18px;
+      background-position: center;
+
+        .card-text{
+          h2{
+            font-size: 2.3em;
+          }
+        }
+
+    }
+  
+    .card-other {
+      background-size: cover;
+      width: 25%;
+      text-align: center;
+      // fixes height
+      min-height: 10vh;
+      border-radius: 18px;
+      background-position: center;
+    }
+  
+
+    .bottom-button {
+      margin-top: 100%;
+      font-size: .9em
+    }
+
+};
