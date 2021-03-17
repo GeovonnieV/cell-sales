@@ -7,9 +7,6 @@ const CellNavbar = () => {
             <nav className="navbarItems">
                 <div className="left-nav">
                     <h1 className="navbar-logo">Cellular Sales</h1>
-                    <div className="menu-icon">
-                        <i className="add_location"></i>
-                    </div>
                 </div>
                 <ul className="navbar-list">
                     <Link to="/">

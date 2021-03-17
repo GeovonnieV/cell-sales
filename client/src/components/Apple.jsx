@@ -76,12 +76,13 @@ const Apple = (props) => {
           {iphones.map((iphone) => (
             <div className="apple-card">
               <img className="card-images" src={iphone.image} alt="" />
-              <p className="card-item-name">{iphone.name}</p>
+              <p className="card-item-name" style={{fontSize: "1rem"}}>{iphone.name}</p>
               <p>${iphone.price.toFixed(2)}</p>
+              <br></br>
               {/* card btns */}
               <div className="btns-container">
                 <button
-                  className="waves-effect btn-small"
+                  className="waves-effect btn-small appleBtn"
                   onClick={() => addIphoneToCart(iphone)}
                 >
                   Add
@@ -110,14 +111,15 @@ const Apple = (props) => {
         <h2 className="apple-row-name">Ipads</h2>
         <div className="apple-row">
           {ipads.map((ipad) => (
-            <div className="apple-card">
+            <div className="apple-card ipad-card">
               <img className="card-images" src={ipad.image} alt="" />
-              <p className="card-item-name">{ipad.name}</p>
+              <p className="card-item-name" style={{fontSize: "1rem"}}>{ipad.name}</p>
               <p>${ipad.price.toFixed(2)}</p>
+              <br></br>
                      {/* card btns */}
                      <div className="btns-container">
                 <button
-                  className="waves-effect btn-small"
+                  className="waves-effect btn-small appleBtn"
                   onClick={() => addIpadToCart(ipad)}
                 >
                   Add
@@ -147,12 +149,13 @@ const Apple = (props) => {
           {appleWatches.map((watch) => (
             <div className="apple-card">
               <img className="watch-images" src={watch.image} alt="" />
-              <p className="card-item-name">{watch.name}</p>
+              <p className="card-item-name" style={{fontSize: "1rem"}}>{watch.name}</p>
               <p>${watch.price.toFixed(2)}</p>
+              <br></br>
                         {/* card btns */}
                         <div className="btns-container">
                 <button
-                  className="waves-effect btn-small"
+                  className="waves-effect btn-small appleBtn"
                   onClick={() => watchAddToCart(watch)}
                 >
                   Add

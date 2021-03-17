@@ -287,3 +287,23 @@
     }
 
 };
+
+// desktop 
+
+@media only screen and (min-width: 1440px){
+  .home-top-text {
+    margin: 0 auto;
+    padding-top: 20vh;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+    h1 {
+      font-size: 6rem;
+      font-weight: 400;
+    }
+    h3 {
+      font-size: 3rem;
+    }
+  }
+
+}
