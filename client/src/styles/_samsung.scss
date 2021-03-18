@@ -53,4 +53,47 @@
 
 .card-watch-name{
     font-size: 1.2rem;
+};
+
+// Media queries 
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .samsung-row{
+        justify-content: space-around;
+        width: 120%;
+    }
+
+    .samsung-card{
+        width: 25%;
+        max-height: 30vh;
+    }
+
+    .card-images{
+        max-height: 50%;
+        max-width: 100%;
+    }
+
+    .btns-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1%;
+    }
+
+    .samsung-btn{
+        width: 75%;
+    }
+
+    .samsung-tablet-card-images{
+        max-height: 50%;
+        max-width: 100%;
+    }
+
+
 }

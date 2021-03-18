@@ -80,12 +80,12 @@ const Samsung = (props) => {
           {samsungPhones.map((galaxy) => (
             <div className="samsung-card">
               <img className="card-images" src={galaxy.image} alt="" />
-              <p className="card-item-name">{galaxy.name}</p>
+              <p className="card-item-name"  style={{fontSize: "1rem"}}>{galaxy.name}</p>
               <p>${galaxy.price.toFixed(2)}</p>
               {/* card btns */}
               <div className="btns-container">
               <button
-                className="waves-effect btn-small"
+                className="waves-effect btn-small samsung-btn"
                 onClick={() => addSamsungPhoneToCart(galaxy)}
               >
                 Add
@@ -116,12 +116,12 @@ const Samsung = (props) => {
                 src={watch.image}
                 alt=""
               />
-              <p className="card-watch-name">{watch.name}</p>
+              <p className="card-watch-name"  style={{fontSize: "1rem"}}>{watch.name}</p>
               <p>${watch.price.toFixed(2)}</p>
               {/* card btns */}
               <div className="btns-container">
                <button
-                className="waves-effect btn-small"
+                className="waves-effect btn-small samsung-btn"
                 onClick={() => addSamsungWatchToCart(watch)}
               >
                 Add
@@ -150,12 +150,12 @@ const Samsung = (props) => {
                 src={tablet.image}
                 alt=""
               />
-              <p className="card-item-name">{tablet.name}</p>
+              <p className="card-item-name"  style={{fontSize: "1rem"}}>{tablet.name}</p>
               <p>${tablet.price.toFixed(2)}</p>
               {/* card btns */}
               <div className="btns-container">
               <button
-                className="waves-effect btn-small"
+                className="waves-effect btn-small samsung-btn"
                 onClick={() => addSamsungTabletToCart(tablet)}
               >
                 Add

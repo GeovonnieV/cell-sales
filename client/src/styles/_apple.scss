@@ -62,10 +62,8 @@
     }
 
     .apple-card{
-        // background-color: blue;
         width: 25%;
         max-height: 30vh;
-        
     }
 
     .card-images{
@@ -85,4 +83,65 @@
     }
 
 
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+      .appleBtn{
+        width: 57%;
+    }
+}
+
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .appleBtn{
+        width: 65%;
+    }
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .card-images{
+        max-height: 50%;
+        max-width: 100%;
+    }
+
+    .watch-images{
+        max-height: 30%;
+        max-width: 100%;
+    }
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .card-images{
+        max-height: 40%;
+        max-width: 100%;
+    }
+
+    .watch-images{
+        max-height: 30%;
+        max-width: 100%;
+    }
 }
