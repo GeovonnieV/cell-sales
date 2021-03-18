@@ -96,4 +96,83 @@
     }
 
 
-}
+};
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .samsung-btn{
+        width: 65%;
+    }
+};
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .samsung-btn{
+        width: 55%;
+    }
+};
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .card-images{
+        max-height: 40%;
+        max-width: 100%;
+    }
+
+    .samsung-row-name{
+        font-weight: 500;
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .samsung-tablet-card-images{
+        max-height: 40%;
+        max-width: 100%;
+    }
+
+    .samsung-watch-card-images{
+        max-height: 40%;
+        max-width: 100%;
+    }
+    
+};
+
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .card-images{
+        max-height: 40%;
+        max-width: 100%;
+    }
+
+    .samsung-watch-card-images{
+        max-height: 40%;
+        max-width: 100%;
+    }
+
+    .samsung-tablet-card-images{
+        max-height: 40%;
+        max-width: 100%;
+    };
+
+};
