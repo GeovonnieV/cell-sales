@@ -6,8 +6,6 @@ import axios from "axios";
 const Cart = () => {
   // State
   const [allCartItems, setAllCartItems] = useState([]);
-  const [newColor, setNewColor] = useState("");
-
 
 
   // grabs all the data in the DB
@@ -18,18 +16,6 @@ const Cart = () => {
       .catch((err) => console.log(err));
   }, []);
 
-
-  // set the new color state
-  const updateColor = (e,itemId) => {
-      setNewColor(e.target.value)
-
-      axios.put("http://localhost:3000/api/phones/" + itemId,  {
-        color: newColor
-     })
-
-  }
-
-  
   // delete item funtion
   const deleteItem = (e, itemId) => {
     e.preventDefault();
@@ -68,24 +54,15 @@ const Cart = () => {
   return (
     <div>
       <CellNavbar />
-      <div className="container">
+      <div className="container" >
         <h1 className="cart-head">Cart</h1>
         {allCartItems.map((item) => (
           <div className="cart-container">
             <div className="cart-left">
-              <h3>{item.title}: {item.color}</h3>
-              {/* dropDown */}
-              <div class="dropdown">
-                <button>Color</button>
-                <div>
-                  <option onClick={(e) => updateColor(e,item._id)}>White</option>
-                  <option >White</option>
-                  <option >Gold</option>
-                </div>
-              </div>
+              <h3 className="other-item-name">{item.title}: {item.color}</h3>
             </div>
             <div className="cart-right">
-              <h4>${item.price}</h4>
+              <h4 className="other-item-price">${item.price}</h4>
               <button
                 className="waves-effect btn-small"
                 // delete item

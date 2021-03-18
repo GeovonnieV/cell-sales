@@ -26,18 +26,18 @@ const Other = (props) => {
       <CellNavbar />
       <h1 className="apple-heading">Other</h1>
       <div className="container">
-        <h2 className="apple-row-name">Games</h2>
-        <div className="apple-row">
+        <div className="other-row">
           {games.map((game) => (
-            <div className="apple-card">
+            <div className="other-card">
               <img className="card-images-other" src={game.image} alt="" />
-              <p className="card-item-name">{game.name}</p>
+              <p className="card-item-name other-name">{game.name}</p>
               <p>${game.price.toFixed(2)}</p>
               {/* card btns */}
-              <div className="btns-container">
-                <button className="waves-effect btn-small" onClick={() => gamesAddToCart(game)}>Add</button>
+              <div className="btns-container other-btns">
+                <button className="waves-effect btn-small other-btn" onClick={() => gamesAddToCart(game)}>Add</button>
                 {/* dropdown */}
               </div>
+              <br></br>
               {/* end card */}
             </div>
           ))}
